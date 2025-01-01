@@ -1,0 +1,63 @@
+/* src/App.css */
+.project-board {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.task-list {
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+}
+
+.task {
+  background: #e0e0e0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+/* src/App.css */
+.app {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #007bff;
+}

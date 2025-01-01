@@ -1,0 +1,118 @@
+/* HomePage Styles */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.homepage h1 {
+  font-size: 3rem;
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Apply 3D hover effect to the main header */
+.homepage h1:hover {
+  transform: translateY(-10px);
+  color: #2ecc71;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.homepage p {
+  font-size: 1.3rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.homepage p:hover {
+  transform: translateY(5px);
+  color: #95a5a6;
+}
+
+/* Create 3D Button */
+.homepage button {
+  padding: 15px 30px;
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.homepage button:hover {
+  background: linear-gradient(145deg, #2980b9, #3498db);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15), 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card for a more sophisticated layout */
+.homepage .feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  width: 90%;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+.homepage .feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
+}
+
+.homepage .feature-card h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.homepage .feature-card p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+/* Remove the underline from the link */
+.feature-link {
+  color: #3498db; /* Set initial link color */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change color when hovering over the link */
+.feature-link:hover {
+  color: #2ecc71; /* Color on hover */
+  text-decoration: none; /* Ensure no underline when hovering */
+}
+
+/* Style for active link (when clicked) */
+.feature-link:active {
+  color: #e74c3c; /* Change color when clicked */
+}
+
+/* Style for when the link is active (i.e., selected) using React Router */
+.feature-link-active {
+  color: #e74c3c; /* Change color to a new color when it's active */
+  font-weight: bold; /* Optional: Make it bold when active */
+}

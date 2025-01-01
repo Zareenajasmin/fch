@@ -1,0 +1,122 @@
+/* General Reset for the Signup Page */
+.signin-page {
+  background-color: #f0f4f8;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.signin-page .form-container {
+  background: linear-gradient(145deg, #fff, #e1e1e1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 -5px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+.signin-page .form-container:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 -10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.signin-page .form-container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* Form Styles */
+.signin-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+
+.signin-page input {
+  padding: 12px 18px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  margin: 5px 0;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+/* Input Focus Effects */
+.signin-page input:focus {
+  border: 2px solid #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+  transform: translateY(-5px);
+}
+
+/* Button Styling */
+.signin-page button {
+  padding: 14px 22px;
+  background: linear-gradient(145deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.signin-page button:hover {
+  background: linear-gradient(145deg, #0056b3, #007bff);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+}
+
+/* Error message styling */
+.signin-page p {
+  color: #e74c3c;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Link Styling */
+.signin-page a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signin-page a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+  .signin-page .form-container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .signin-page .form-container h2 {
+    font-size: 22px;
+  }
+
+  .signin-page input {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .signin-page button {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+}
